@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Computer Components Order Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Order Form for Computer Components</h1>
+        <form id="orderForm">
+            <div class="form-group">
+                <label for="cpu">CPU:</label>
+                <select id="cpu" name="cpu">
+                    <option value="200">Intel i5 - $200</option>
+                    <option value="300">Intel i7 - $300</option>
+                    <option value="400">Intel i9 - $400</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="gpu">GPU:</label>
+                <select id="gpu" name="gpu">
+                    <option value="250">NVIDIA GTX 1660 - $250</option>
+                    <option value="400">NVIDIA RTX 3060 - $400</option>
+                    <option value="800">NVIDIA RTX 3080 - $800</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="ram">RAM:</label>
+                <select id="ram" name="ram">
+                    <option value="80">16GB - $80</option>
+                    <option value="150">32GB - $150</option>
+                    <option value="300">64GB - $300</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="storage">Storage:</label>
+                <select id="storage" name="storage">
+                    <option value="50">256GB SSD - $50</option>
+                    <option value="100">512GB SSD - $100</option>
+                    <option value="200">1TB SSD - $200</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <button type="button" onclick="calculateTotal()">Calculate Total</button>
+            </div>
+
+            <div class="form-group">
+                <label for="total">Total Cost:</label>
+                <input type="text" id="total" name="total" readonly>
+            </div>
+        </form>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
